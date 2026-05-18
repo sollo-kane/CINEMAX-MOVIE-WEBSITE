@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CINEMAX — Where Stories Live</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">CINEMAX</div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#genres">Genres</a></li>
+      <li><a href="#upcoming">Upcoming</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-search" id="searchToggle">&#9906;</button>
+      <button class="btn-signin">Sign In</button>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- SEARCH BAR -->
+  <div class="search-overlay" id="searchOverlay">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search movies, shows..."/>
+    <button class="search-close" id="searchClose">&#10005;</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <span class="hero-tag" id="heroTag">Featured Film</span>
+      <h1 class="hero-title" id="heroTitle">DUNE:<br>PART TWO</h1>
+      <p class="hero-desc" id="heroDesc">Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe.</p>
+      <div class="hero-meta" id="heroMeta">
+        <span class="hero-rating">★ 8.5</span>
+        <span>2h 46m</span>
+        <span>Sci-Fi / Adventure</span>
+        <span>2024</span>
+      </div>
+      <div class="hero-actions">
+        <button class="btn-primary" id="heroPlayBtn">▶ Play Trailer</button>
+        <button class="btn-secondary" id="heroInfoBtn">More Info</button>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+    <button class="hero-arrow hero-prev" id="heroPrev">&#8592;</button>
+    <button class="hero-arrow hero-next" id="heroNext">&#8594;</button>
+  </section>
+
+  <!-- TRENDING -->
+  <section class="section" id="trending">
+    <div class="section-header">
+      <h2 class="section-title">Trending Now</h2>
+      <a href="#" class="see-all">See All &#8594;</a>
+    </div>
+    <div class="cards-grid" id="trendingGrid"></div>
+  </section>
+
+  <!-- GENRES -->
+  <section class="section genres-section" id="genres">
+    <div class="section-header">
+      <h2 class="section-title">Browse by Genre</h2>
+    </div>
+    <div class="genres-grid" id="genresGrid"></div>
+  </section>
+
+  <!-- UPCOMING -->
+  <section class="section" id="upcoming">
+    <div class="section-header">
+      <h2 class="section-title">Coming Soon</h2>
+      <a href="#" class="see-all">See All &#8594;</a>
+    </div>
+    <div class="upcoming-list" id="upcomingList"></div>
+  </section>
+
+  <!-- TOP RATED -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Top Rated</h2>
+      <a href="#" class="see-all">See All &#8594;</a>
+    </div>
+    <div class="cards-row" id="topRatedRow"></div>
+  </section>
+
+  <!-- MOVIE MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&#10005;</button>
+      <div class="modal-poster" id="modalPoster"></div>
+      <div class="modal-body">
+        <span class="modal-tag" id="modalTag"></span>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-actions">
+          <button class="btn-primary">▶ Watch Now</button>
+          <button class="btn-secondary">+ Watchlist</button>
+        </div>
+        <div class="modal-cast" id="modalCast"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">CINEMAX</div>
+        <p>Your ultimate destination for movies and entertainment. Stream, discover, and explore the world of cinema.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Documentaries</a></li>
+            <li><a href="#">Anime</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Watchlist</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CINEMAX. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
